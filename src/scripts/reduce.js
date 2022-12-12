@@ -10,7 +10,8 @@ const reduce = (array, callback, value) => {
     let element = 0
 
     for(let i = 0; i < array.length; i++){
-        newValue + callback(element, sum, i, array)
+        const sum = array[i]
+        newValue = newValue + callback(element, sum, i, array)
          
     }
     return newValue
