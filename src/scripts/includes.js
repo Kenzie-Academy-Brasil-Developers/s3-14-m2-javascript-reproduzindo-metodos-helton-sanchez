@@ -1,13 +1,12 @@
 const pets = ['cachorro', 'gato', 'tartaruga', 'pássaro'];
 
 function addPets (array, newPet){
-    const incluse = []
     
     for (let i = 0; i < array.length; i++){
-        if(array[i] !== pets){
-            incluse.push(array[i], newPet)
+        if(array[i] === newPet){
+            return true
         }
     }
-    return incluse
+    return false
 }
 console.log(addPets(pets, "reptil"));

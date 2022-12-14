@@ -5,12 +5,10 @@ function find (element){
 }
 
 function findPair (array, callBack){
-    const pair = []
 
     for(let i = 0; i < array.length; i++){
         if(callBack(array[i])){
-            pair.push(array[i])
-            return pair
+            return array[i]
         }
     }
 }
